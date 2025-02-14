@@ -1,0 +1,26 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit Entry
+{% endblock %}
+
+{% block body %}
+    <h1>Entry Editor</h1>
+    <div>Fill out the form to edit the entry</div>
+    <ul>
+        <li>Use # to add a big heading</li>
+        <li>Use * to add bullet points</li>
+        <li>Use ** ** or __ __ to bold text</li>
+        <li>Use * * or _ _ to italicize text</li>
+    </ul>
+    <form action="{% url 'edit' title=current_title %}" method="post">
+        {% csrf_token %}
+        <label for="c">Content</label>
+        <br>
+        <textarea placeholder="Write the content here" name="c">{{ current_content }}</textarea>
+        <br>
+        <input type="submit">
+    </form>
+    
+
+{% endblock %}
