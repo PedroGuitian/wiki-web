@@ -43,3 +43,32 @@ form > label {
 .sidebar h2 {
     margin-top: 5px;
 }
+
+.index-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.index-item{
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+}
+.delete-link{
+    margin-left: 10px
+}
+.delete-link:hover{
+    color: red;
+    text-decoration: underline;
+}
+.form-element{
+    margin-bottom: 10px;
+}
+.form-submit{
+    background-color: #4693FC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.form-submit:hover{
+    background-color: #3578E5;
+}

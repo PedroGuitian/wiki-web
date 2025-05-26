@@ -16,11 +16,11 @@
     </ul>
     <form action="{% url 'create' %}" method="post">
         {% csrf_token %}
-        <input type="text" placeholder="Entry Title" name="t">
+        <input type="text" placeholder="Entry Title" name="t" class="form-element">
         <br>
-        <textarea placeholder="Write the content here" name="c"></textarea>
+        <textarea placeholder="Write the content here" name="c" class="form-element"></textarea>
         <br>
-        <input type="submit">
+        <input type="submit" class="form-submit">
     </form>
     
 

@@ -10,5 +10,6 @@
         {{ content|safe }}
     </div> 
 
-    <a href="{% url 'edit' title=entry_title %}">Edit Entry</a>
+    <a href="{% url 'edit' title=entry_title %}">Edit</a>
+    <a href="{% url 'delete' title=entry_title %}" class="delete-link">Delete</a>
 {% endblock %}

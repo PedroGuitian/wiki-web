@@ -103,3 +103,14 @@ def substring(input):
     if results:
         return results
     return None
+
+def delete(request, title):
+    content = util.get_entry(title)
+    if content:
+        util.delete_entry(title)
+        return redirect('index')
+    else:
+        return render(request, "encyclopedia/error_page.html", {
+            "error_message": f"The entry '{title}' does not exist",
+            "title": "Deletion Error"
+        })

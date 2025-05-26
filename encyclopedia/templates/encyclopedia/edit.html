@@ -15,11 +15,11 @@
     </ul>
     <form action="{% url 'edit' title=current_title %}" method="post">
         {% csrf_token %}
-        <label for="c">Content</label>
+        <label for="c" class="form-element">Content</label>
         <br>
-        <textarea placeholder="Write the content here" name="c">{{ current_content }}</textarea>
+        <textarea placeholder="Write the content here" name="c" class="form-element">{{ current_content }}</textarea>
         <br>
-        <input type="submit">
+        <input type="submit" class="form-element">
     </form>
     
 
