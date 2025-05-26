@@ -1,4 +1,4 @@
-# 🧠 Wiki – CS50 Web Project 1
+# 🧠 Wiki-Web
 
 This is a Wikipedia-like online encyclopedia built with Django.
 
@@ -23,8 +23,8 @@ This is a Wikipedia-like online encyclopedia built with Django.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/wiki.git
-   cd wiki
+   git clone https://github.com/your-username/wiki-web.git
+   cd wiki-web
 2. Create and activate a virtual environment
    ```bash
    python3 -m venv venv
